@@ -277,12 +277,12 @@ int end;
         		}
         		damage=damage*(d.random((float)0.9,(float)1.1));
         		if (p.combo==0||p.combo==1) {
-        			p.phealth+=18;
+        			p.phealth+=20;
         			enem.get(i).Hit(damage);
         			popups.add(new Text(d,enem.get(i).GetX(), enem.get(i).GetY(),Float.toString(damage),120,20,1));
         		}
         		if (p.combo==2) {
-        			p.phealth+=18;
+        			p.phealth+=20;
         			enem.get(i).Hit(damage*2);
         			enem.get(i).kb(p.x, p.y);
         			popups.add(new Text(d,enem.get(i).GetX(), enem.get(i).GetY(),Float.toString(damage*2),150,30,1));
@@ -293,7 +293,7 @@ int end;
         		
         			
         		
-        		//enem.get(i).Pathfind();
+        		enem.get(i).Pathfind();
         		//enem.get(i).Move();
         		enem.get(i).Barrier();
         		

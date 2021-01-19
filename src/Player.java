@@ -309,7 +309,7 @@ import processing.core.*;
 	        x=x+ace*(accxr-accxl);
 	            
 	        y=y+ace*(accyd-accyt);
-	        phealth-=(float) 0.6;
+	        phealth-=(float) 0.5;
 	    }
 	    
 	    public void Accel(){
